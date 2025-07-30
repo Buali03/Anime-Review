@@ -45,7 +45,7 @@ router.post("/login",async(req,res)=>{
             _id: foundUser._id
         }
 
-        res.redirect("/books")
+        res.redirect("/anime/create")
 
     }
     catch(error){

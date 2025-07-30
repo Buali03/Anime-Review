@@ -1,4 +1,4 @@
-const Anime = require ("../models/anime")
+const Anime = require ("../models/Anime")
 const router = require("express").Router()
 
 router.get("/create",(req,res)=>{
