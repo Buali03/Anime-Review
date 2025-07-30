@@ -25,4 +25,16 @@ router.get("/",async(req,res)=>{
     }
 })
 
+router.get("/:animeID",async (req,res)=>{
+    console.log(req.params)
+    try{
+    const foundAnime = await Anime.findById(req.params.animeID)
+    console.log(foundAnime)
+    res.render("anime/anime-details.ejs",{foundAnime})
+
+    }
+    catch(error){
+        console.log(error)
+    }
+})
 module.exports = router

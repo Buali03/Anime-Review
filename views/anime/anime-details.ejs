@@ -6,10 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>All Anime:</h1>
-    <% allAnime.forEach(element => { %>
-        <p>Name: <%= element.name %></p>
-        <a href="/anime/<%=element._id%>">Show more details</a>
-    <% }); %>
+    <h1><%= foundAnime.name %></h1>
+    <p>Genre: <%= foundAnime.genre %></p>
+    <p>Rating: <%= foundAnime.rating %></p>
 </body>
 </html>
