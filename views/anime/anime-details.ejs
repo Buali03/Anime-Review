@@ -8,6 +8,7 @@
 </head>
 <body>
     <%- include('../partials/navbar') %>
+    <div>
     <h1><%= foundAnime.name %></h1>
     <img src="<%= foundAnime.image%>">
     <p>Genre: <%= foundAnime.genre %></p>
@@ -16,6 +17,7 @@
     <p>Creator: <%= foundAnime.user.username %></p>
 
 
+    <% if(user._id == foundAnime.user._id){%>
     <a href="/anime/<%=foundAnime._id%>/update">
     <button type="submit">Update anime</button>
     </a>
@@ -23,5 +25,7 @@
     <form action="/anime/<%=foundAnime._id%>?_method=DELETE" method="post">
     <button type="submit">Delete anime</button>
    </form>
+    <% }%>
+    </div>
 </body>
 </html>

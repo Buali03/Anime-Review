@@ -1,4 +1,4 @@
-const Anime = require ("../models/Anime")
+const Anime = require ("../models/anime")
 const User = require ("../models/User")
 const router = require("express").Router()
 
@@ -39,12 +39,9 @@ router.get("/",async(req,res)=>{
 
 //Show page for specific Anime
 router.get("/:animeID",async (req,res)=>{
-    console.log(req.params)
     try{
     const foundAnime = await Anime.findById(req.params.animeID).populate("user")
-    console.log(foundAnime)
     res.render("anime/anime-details.ejs",{foundAnime})
-
     }
     catch(error){
         console.log(error)
@@ -88,11 +85,7 @@ router.put("/:AnimeId",async(req,res)=>{
 
 router.get("/users/:userId",async(req,res)=>{
         const allAnime = await Anime.find({user:req.params.userId}).populate("user")
-        console.log(allAnime)
         const foundUser = await User.findById(req.params.userId)
-        // if(allAnime.length ===0){
-        //     return res.send('NO ANIMES YET')
-        // }
         res.render("anime/all-anime.ejs",{allAnime: allAnime,foundUser})
 
 })
