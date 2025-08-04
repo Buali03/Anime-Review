@@ -32,7 +32,7 @@ They must create an account to be able to use the website functionality. These a
 <p>Please share your anime reviews and experience with others in <i><a href="https://anime-review-ptrh.onrender.com">MangaMuse</a></i>!</p>
 
 <h2>Attributions</h2>
-<p><b>CSS</b></p>
+<p><b>MongoDB</b></p>
 <ul>
 <li><a href="https://github.com/GA-SEB-8/Unit02-Auth-Starter-Template">Authentication Template</li>
 <li><a href="https://github.com/GA-SEB-8/Unit02-Week02-Day01-Mongoose-Relationships">Mongoose Relationships</li>
