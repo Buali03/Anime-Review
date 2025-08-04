@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <%- include('../partials/navbar') %>
+    <% if(user && allAnime.length >0){ %>
+    <h1><%= allAnime[0].user.username %>'s Reviews:</h1>
+    <% allAnime.forEach(element => { %>
+        <a href="/anime/<%=element._id%>"><img src="<%= element.image %>"> </a>
+    <% }); %>
+
+    <% }else if(!user){ %>
+        <h1 id="loginMSG">Please Login First</h1>
+    <% }else{  %>
+  
+        <h1><%= foundUser.username %> have not added any reviews yet</h1>
+    <% }%> 
+    
+</body>
+</html>

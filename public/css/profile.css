@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 8px;
+}
+
+h1 {
+  color: #2c2b2b;
+  margin-top: 21px;
+}
+
+#loginMSG{
+  text-align: center;
+}
+
+img{
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 2px;
+}

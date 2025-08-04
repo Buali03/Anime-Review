@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=foundAnime.name%></title>
+    <link rel="stylesheet" href="/css/create.css">
+</head>
+<body>
+    <%- include('../partials/navbar') %>
+
+    <h1>Update Anime</h1>
+
+    <form action="/anime/<%= foundAnime._id %>?_method=PUT" method="post">
+        <label for="name">Name:</label>
+        <input value="<%= foundAnime.name %>" type="text" name="name" id="name">
+
+        <label for="genre">Genre:</label>
+        <input value="<%= foundAnime.genre %>" type="text" name="genre" id="genre">
+        
+        <label for="rating">Rating:</label>
+        <input value="<%= foundAnime.rating %>" type="number" name="rating" id="rating">
+        
+        <label for="review">Review:</label>
+        <textarea name="review" id="review" rows="4"><%=foundAnime.review%></textarea>
+        
+        <label for="image">Image:</label>
+        <input value="<%= foundAnime.image%>" name="image" id="image" type="text">
+
+        <button type="submit">Update</button>
+</body>
+</html>

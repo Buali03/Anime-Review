@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=foundAnime.name%></title>
+    <link rel="stylesheet" href="/css/details.css">
+</head>
+<body>
+    <%- include('../partials/navbar') %>
+    <h1><%= foundAnime.name %></h1>
+    <img src="<%= foundAnime.image%>">
+    <p>Genre: <%= foundAnime.genre %></p>
+    <p>Rating: <%= foundAnime.rating %></p>
+    <p>Review: <%= foundAnime.review %></p>
+    <p>Creator: <%= foundAnime.user.username %></p>
+
+
+    <a href="/anime/<%=foundAnime._id%>/update">
+    <button type="submit">Update anime</button>
+    </a>
+
+    <form action="/anime/<%=foundAnime._id%>?_method=DELETE" method="post">
+    <button type="submit">Delete anime</button>
+   </form>
+</body>
+</html>

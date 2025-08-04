@@ -1,0 +1,21 @@
+.user-list {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.user-list a {
+  display: block;
+  margin: 12px auto;
+  padding: 12px 20px;
+  width: 200px;
+  background-color: #0943c2;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.user-list a:hover {
+  background-color: #0736a1;
+}

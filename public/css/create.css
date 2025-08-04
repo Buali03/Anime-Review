@@ -1,0 +1,68 @@
+h1{
+    text-align: center;
+}
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #484747;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #cac5c5;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0d47c4;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #08359f;
+}
+
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #cac5c5;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: white;
+  color: #484747;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #cac5c5;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 15px;
+  resize: vertical;
+}

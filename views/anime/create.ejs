@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Anime</title>
+    <link rel="stylesheet" href="/css/create.css">
+</head>
+<body>
+    <%- include('../partials/navbar') %>
+    <% if(user){ %>
+    <h1>Create a review:</h1>
+    <form action="/anime/create" method="post">
+        <label for="name">Name:</label>
+        <input name="name" id="name" type="text">
+
+        <label for="genre">Genre:</label>
+        <input name="genre" id="genre" type="text">
+
+        <label for="rating">Rating:</label>
+        <select name="rating" id="rating">
+            <option value="" disabled selected hidden></option>
+            <option value="10">10</option>
+            <option value="9">9</option>
+            <option value="8">8</option>
+            <option value="7">7</option>
+            <option value="6">6</option>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+            <option value="0">0</option>
+        </select>
+
+        <label for="review">Review:</label>
+        <textarea name="review" id="review" rows="4"></textarea>
+
+        <label for="image">Image source:</label>
+        <input name="image" id="image" type="text">
+        
+        <button type="submit">Create</button>
+    </form>
+    <% }else{ %>
+        <h1 id="loginMSG">Please Login First</h1>
+    <% } %>
+</body>
+</html>
