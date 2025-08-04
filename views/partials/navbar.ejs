@@ -6,7 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/navbar.css">
 </head>
-
+<% if(user){ %>
+    <a href="/anime"><h1 class="logo">MangaMuse</h1></a>
+<% } else { %>
+    <h1 class="logo">MangaMuse</h1>
+<% } %>
 <nav>
     <% if (user){ %>
         <a href="/anime">Profile</a>
@@ -14,8 +18,8 @@
         <a href="/anime/user">Users</a>
         <a href="/auth/logout">Logout</a>
     <%} else{ %>
-    <a href="/auth/sign-up">Sign Up</a>
-    <a href="/auth/login">Login</a>
+        <a href="/auth/sign-up">Sign Up</a>
+        <a href="/auth/login">Login</a>
     <%} %>
 
 </nav>

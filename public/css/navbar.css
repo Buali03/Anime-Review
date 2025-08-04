@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 nav {
   background-color: #08359f;
   padding: 20px;
@@ -14,4 +15,13 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+.logo{  
+  text-align: left;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: #2c2b2b;
 }
