@@ -1,5 +1,5 @@
 const Anime = require ("../models/anime")
-const User = require ("../models/User")
+const User = require ("../models/user")
 const router = require("express").Router()
 
 router.get("/user",async(req,res)=>{
