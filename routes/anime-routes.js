@@ -30,7 +30,9 @@ router.post("/create",async (req,res)=>{
 router.get("/",async(req,res)=>{
     try{
         const allAnime = await Anime.find({user:req.session.user._id}).populate("user")
-        res.render("anime/all-anime.ejs",{allAnime: allAnime})
+                const foundUser = await User.findById(req.session.user._id)
+
+        res.render("anime/all-anime.ejs",{allAnime: allAnime,foundUser})
     }catch (error){
         console.log(error)
     }
