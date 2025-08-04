@@ -29,7 +29,7 @@ They must create an account to be able to use the website functionality. These a
 <b>Logout:</b> This is made for users to log out of their currently logged in account.
 </p>
 </br>
-<p>Please share your anime reviews and experience with others in <i><a href="https://anime-review-ptrh.onrender.com">MangaMuse</a></i>!</p>
+<p>Please share your anime reviews and experience with others in <i><a href="https://mangamuse.onrender.com">MangaMuse</a></i>!</p>
 
 <h2>Attributions</h2>
 <p><b>MongoDB</b></p>
