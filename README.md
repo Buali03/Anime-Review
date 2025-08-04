@@ -5,15 +5,15 @@ MangaMuse is an anime review website allowing users to share their anime experie
 </p>
 <p>
 In order to create reviews and view other's profiles.
-they must create an account to be able to use the website functionality. These are the different pages that this website has:
+They must create an account to be able to use the website functionality. These are the different pages that this website has:
 </p>
 </br>
 <img src="SignUp.png">
 <p>
-<b>Sign up:</b> This page made to allow users create their account for the website.
+<b>Sign up:</b> This page allows users create their account for the website.
 </p>
 <p>
-<b>Login:</b> This page made to allow users log into their account for the website.
+<b>Login:</b> This page allows users log into their account for the website.
 </p>
 <img src="PagePic.png">
 <p>
@@ -28,10 +28,7 @@ they must create an account to be able to use the website functionality. These a
 <p>
 <b>Logout:</b> This is made for users to log out of their currently logged in account.
 </p>
-
-<p>
-Here is the link to <i><a href="https://anime-review-ptrh.onrender.com">MangaMuse</a></i>.
-</p>
+</br>
 <p>Please share your anime reviews and experience with others in <i><a href="https://anime-review-ptrh.onrender.com">MangaMuse</a></i>!</p>
 
 <h2>Attributions</h2>
